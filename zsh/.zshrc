@@ -3,7 +3,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/dotfiles/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # EXPORTS
 export QT_QPA_PLATFORM=wayland
@@ -19,18 +20,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   sudo
   dirhistory
-  # zsh_reload
-  # emoji
   jsontools
-#  asdf
-#  docker
-#  docker-compose
   extract
   history
   copyfile
-# git
   mosh
-# timer
   zsh-autocomplete
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -179,7 +173,6 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/damir/Repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [[ -s /home/damir/.autojump/etc/profile.d/autojump.sh ]] && source /home/damir/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
