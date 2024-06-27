@@ -33,7 +33,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
 # ALIASES
 alias ezsh='exec zsh'
 alias xo='xdg-open'
