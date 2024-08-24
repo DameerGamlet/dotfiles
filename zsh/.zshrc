@@ -9,9 +9,8 @@ source ~/dotfiles/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # EXPORTS
 export QT_QPA_PLATFORM=wayland
 export EDITOR=nvim
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 export PATH=/home/damir/.local/bin:$PATH
-# export DOCKER_HOST=unix:///run/user/1000/podman/podman.sock
 
  #THEMES
 ZSH_THEME="powerlevel10k/powerlevel10k"
