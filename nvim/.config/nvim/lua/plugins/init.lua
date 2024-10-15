@@ -59,13 +59,6 @@ local default_plugins = {
     },
     lazy = false,
   },
-  -- {
-  --   "goolord/alpha-nvim",
-  --   dependencies = { "nvim-tree/nvim-web-devicons" },
-  --   config = function()
-  --     require("alpha").setup(require("alpha.themes.startify").config)
-  --   end,
-  -- },
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
